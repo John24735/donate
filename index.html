@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Donation Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Support Ghana Schools</h1>
+        <p>Your donation can make a difference!</p>
+    </header>
+    <main class="main">
+        <section class="donation-section">
+            <h2>Donate Now</h2>
+            <form id="donation-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="amount">Donation Amount (GHS):</label>
+                <input type="number" id="amount" name="amount" required placeholder="Enter amount">
+
+                <button type="button" id="pay-now">Donate Now</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Ghana School Donation</p>
+    </footer>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
